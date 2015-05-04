@@ -11,6 +11,7 @@
     android:id="@+id/cardlabel"
     android:layout_centerVertical="true"
     android:layout_marginLeft="30dp"
+    android:rotation="270"
     >
 
 </TextView>

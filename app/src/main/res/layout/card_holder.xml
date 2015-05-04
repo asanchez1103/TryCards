@@ -1,31 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:id="@+id/cardholder"
     >
+    <FrameLayout
 
-    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/image"
-        android:src="@drawable/redcard">
-    </ImageView>
+        android:layout_width="wrap_content"  >
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/redcard">
+        </ImageView>
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:textStyle="bold"
-        android:text="HELLO THERE"
-        android:layout_alignTop="@+id/redcard"
-        android:layout_alignLeft="@+id/redcard"
-        android:id="@+id/cardlabel"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="85dp"
-        >
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/carddesc"
 
-    </TextView>
+            android:textStyle="bold"
+            android:text=""
+            android:layout_marginTop= "200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="155dp"
+            >
 
+        </TextView>
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardlabel"
+
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:layout_alignTop="@+id/redcard"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="230dp"
+            android:rotation="270"
+            >
+
+        </TextView>
+
+
+    </FrameLayout>
 
 </RelativeLayout>

@@ -46,16 +46,14 @@ public class CardClass {
         faceUp = pubYet;
 
     }
-
     public CardClass() {
         cardID = 0;
-        cardName = "empty";
-        cardInfo = "info empty";
+        cardName = "";
+        cardInfo = "";
         cardHolder = 0;
         faceUp = false;
-
+        // TODO Auto-generated constructor stub
     }
-
     public void setID(int newID){
         cardID = newID;
     }
@@ -72,6 +70,6 @@ public class CardClass {
         faceUp = flipIt;
     }
 
+
+
 }
-
-
